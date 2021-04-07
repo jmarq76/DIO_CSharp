@@ -1,0 +1,16 @@
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\obj\Debug\net5.0\SolucaoProblemasDIO.csprojAssemblyReference.cache
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\obj\Debug\net5.0\SolucaoProblemasDIO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\obj\Debug\net5.0\SolucaoProblemasDIO.AssemblyInfoInputs.cache
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\obj\Debug\net5.0\SolucaoProblemasDIO.AssemblyInfo.cs
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\obj\Debug\net5.0\SolucaoProblemasDIO.csproj.CoreCompileInputs.cache
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\bin\Debug\net5.0\SolucaoProblemasDIO.exe
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\bin\Debug\net5.0\SolucaoProblemasDIO.deps.json
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\bin\Debug\net5.0\SolucaoProblemasDIO.runtimeconfig.json
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\bin\Debug\net5.0\SolucaoProblemasDIO.runtimeconfig.dev.json
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\bin\Debug\net5.0\SolucaoProblemasDIO.dll
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\bin\Debug\net5.0\ref\SolucaoProblemasDIO.dll
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\bin\Debug\net5.0\SolucaoProblemasDIO.pdb
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\obj\Debug\net5.0\SolucaoProblemasDIO.dll
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\obj\Debug\net5.0\ref\SolucaoProblemasDIO.dll
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\obj\Debug\net5.0\SolucaoProblemasDIO.pdb
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucaoProblemasDIO\obj\Debug\net5.0\SolucaoProblemasDIO.genruntimeconfig.cache
