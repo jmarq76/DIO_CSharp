@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using DIO.Bank.Classes;
 
 namespace DIO.Bank
 {
@@ -27,6 +29,7 @@ namespace DIO.Bank
             if (this.Saldo - valorSaque < (this.Credito * -1))
             {
                 Console.WriteLine("Saldo insuficiente!");
+
                 return false;
             }
 
@@ -43,6 +46,8 @@ namespace DIO.Bank
             this.Saldo += valorDeposito;
 
             Console.WriteLine("Saldo atual da conta de {0} é {1}", this.Nome, this.Saldo);
+
+            
         }
 
         public void Transferir(double valorTransferencia, Conta contaDestino)
@@ -51,6 +56,7 @@ namespace DIO.Bank
             {
                 contaDestino.Depositar(valorTransferencia);              
             }
+
         }
 
         public override string ToString()
@@ -61,6 +67,11 @@ namespace DIO.Bank
             retorno += "Saldo " + this.Saldo + " | ";
             retorno += "Crédito " + this.Credito;
             return retorno;
+        }
+
+        public string GetName()
+        {
+            return this.Nome;
         }
 
         
