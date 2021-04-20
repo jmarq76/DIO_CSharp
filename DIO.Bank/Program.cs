@@ -10,6 +10,7 @@ namespace DIO.Bank
         static List<Conta> listaContas = new List<Conta>();
         static List<LogHistory> listaLog = new List<LogHistory>();
         static List<Usuario> listaUsuarios = new List<Usuario>();
+        static string usuarioAtivo;
 
         static void Main(string[] args)
         {
@@ -108,6 +109,15 @@ namespace DIO.Bank
             {
                 if (listaUsuarios[i].Equals(confereUser))
                 {
+                    usuarioAtivo = userAcesso;
+
+                    LogHistory logAcesso = new LogHistory(listaLog.Count, 
+                                                  TipoLog.Acesso, 
+                                                  userAcesso, 
+                                                  0, 
+                                                  $"Acesso ao sistema realizado por {userAcesso} em {DateTime.Now}");
+
+                    listaLog.Add(logAcesso);
                     return true;
                 }
             }
@@ -153,6 +163,14 @@ namespace DIO.Bank
             if (novoUsuario.CadastarUsuario())
             {
                 listaUsuarios.Add(novoUsuario);
+
+                LogHistory logCria = new LogHistory(listaLog.Count, 
+                                                  TipoLog.ContaCriada, 
+                                                  username, 
+                                                  0, 
+                                                  $"Conta com o nome {username} criada em {DateTime.Now}");
+
+                listaLog.Add(logCria);
             }
             
         }
@@ -237,13 +255,13 @@ namespace DIO.Bank
         {
             Console.WriteLine("Listar contas");
 
-            /* LogHistory logConsultas = new LogHistory(listaLog.Count, 
+            LogHistory logConsultas = new LogHistory(listaLog.Count, 
                                                      TipoLog.Consulta, 
-                                                     usuario, 
-                                                     null, 
-                                                     $"{usuario} fez consulta às contas em {System.DateTime()}");
+                                                     usuarioAtivo, 
+                                                     0, 
+                                                     $"{usuarioAtivo} fez consulta às contas em {DateTime.Now}");
 
-            listaLog.Add(logConsultas); */
+            listaLog.Add(logConsultas);
 
             if (listaContas.Count == 0)
             {

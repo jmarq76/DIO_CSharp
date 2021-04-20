@@ -10,6 +10,8 @@ namespace DIO.Bank.Classes
 
         Consulta = 4,
 
-        ContaCriada = 5
+        ContaCriada = 5,
+
+        Acesso = 6
     }
 }
