@@ -81,7 +81,26 @@ namespace DIO.Bank
             string userAcesso =  Console.ReadLine();
 
             Console.Write("Digite a senha: ");
-            string senhaAcesso =  Console.ReadLine();
+            ConsoleKeyInfo infoChave;
+            string senhaAcesso = "";
+
+            do
+            {
+                infoChave = Console.ReadKey(true);
+                if (infoChave.Key != ConsoleKey.Backspace && infoChave.Key != ConsoleKey.Enter)
+                {
+                    senhaAcesso += infoChave.KeyChar;
+                    Console.Write("*");
+                }
+                else
+                {
+                    if (infoChave.Key == ConsoleKey.Backspace && senhaAcesso.Length > 0)
+                    {
+                        senhaAcesso = senhaAcesso.Substring(0, (senhaAcesso.Length - 1));
+                        Console.Write("b b");
+                    }
+                }
+            } while (infoChave.Key != ConsoleKey.Enter);
 
             Usuario confereUser = new Usuario(userAcesso, senhaAcesso);
 
@@ -108,7 +127,26 @@ namespace DIO.Bank
             string username =  Console.ReadLine();
 
             Console.Write("Digite a nova senha: ");
-            string senha =  Console.ReadLine();
+            ConsoleKeyInfo infoChave;
+            string senha = "";
+
+            do
+            {
+                infoChave = Console.ReadKey(true);
+                if (infoChave.Key != ConsoleKey.Backspace && infoChave.Key != ConsoleKey.Enter)
+                {
+                    senha += infoChave.KeyChar;
+                    Console.Write("*");
+                }
+                else
+                {
+                    if (infoChave.Key == ConsoleKey.Backspace && senha.Length > 0)
+                    {
+                        senha = senha.Substring(0, (senha.Length - 1));
+                        Console.Write("b b");
+                    }
+                }
+            } while (infoChave.Key != ConsoleKey.Enter);
 
             Usuario novoUsuario = new Usuario(username, senha);
 
