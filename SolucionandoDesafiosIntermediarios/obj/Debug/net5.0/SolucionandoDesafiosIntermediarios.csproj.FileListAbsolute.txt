@@ -1,0 +1,16 @@
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\obj\Debug\net5.0\SolucionandoDesafiosIntermediarios.csprojAssemblyReference.cache
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\obj\Debug\net5.0\SolucionandoDesafiosIntermediarios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\obj\Debug\net5.0\SolucionandoDesafiosIntermediarios.AssemblyInfoInputs.cache
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\obj\Debug\net5.0\SolucionandoDesafiosIntermediarios.AssemblyInfo.cs
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\obj\Debug\net5.0\SolucionandoDesafiosIntermediarios.csproj.CoreCompileInputs.cache
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\bin\Debug\net5.0\SolucionandoDesafiosIntermediarios.exe
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\bin\Debug\net5.0\SolucionandoDesafiosIntermediarios.deps.json
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\bin\Debug\net5.0\SolucionandoDesafiosIntermediarios.runtimeconfig.json
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\bin\Debug\net5.0\SolucionandoDesafiosIntermediarios.runtimeconfig.dev.json
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\bin\Debug\net5.0\SolucionandoDesafiosIntermediarios.dll
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\bin\Debug\net5.0\ref\SolucionandoDesafiosIntermediarios.dll
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\bin\Debug\net5.0\SolucionandoDesafiosIntermediarios.pdb
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\obj\Debug\net5.0\SolucionandoDesafiosIntermediarios.dll
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\obj\Debug\net5.0\ref\SolucionandoDesafiosIntermediarios.dll
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\obj\Debug\net5.0\SolucionandoDesafiosIntermediarios.pdb
+C:\Users\joao\Documents\GitHub\DIO_csharp\SolucionandoDesafiosIntermediarios\obj\Debug\net5.0\SolucionandoDesafiosIntermediarios.genruntimeconfig.cache
