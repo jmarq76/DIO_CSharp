@@ -166,7 +166,23 @@ namespace Vaquinha.Unit.Tests.DomainTests
             doacao.ErrorMessages.Should().Contain("O campo Email é obrigatório.", because: "o campo Email não foi informado.");            
         }
 
-        
+        [Fact]
+        [Trait("Doacao", "Doacao_DadosNaoInformadosDoacaoAnonima_DoacaoValida")]
+        public void Doacao_DadosNaoInformadosDoacaoAnonima_DoacaoValida()
+        {
+            // Arrange
+            var doacao = _doacaoFixture.DoacaoAnonimaValida();
+            doacao.AdicionarEnderecoCobranca(_enderecoFixture.EnderecoValido());
+            doacao.AdicionarFormaPagamento(_cartaoCreditoFixture.CartaoCreditoValido());
+
+            // Act
+            var valido = doacao.Valido();
+
+            // Assert
+            valido.Should().BeTrue(because: "o campo doação anônima foi acionado");
+
+            doacao.ErrorMessages.Should().BeEmpty();
+        }
 
     }
 }
