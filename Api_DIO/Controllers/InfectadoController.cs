@@ -45,7 +45,7 @@ namespace Api_DIO.Controllers
         public ActionResult AtualizarInfectado([FromBody] InfectadoDto dto)
         {
 
-            _infectadosCollection.UpdateOne(Builders<Infectado>.Filter.Where(_ => _.id == dto.id), Builders<Infectado>.Update.Set("sexo", dto.Sexo));
+            _infectadosCollection.UpdateOne(Builders<Infectado>.Filter.Where(_ => _.Id == dto.Id), Builders<Infectado>.Update.Set("sexo", dto.Sexo));
             
             return Ok("Atualizado com sucesso");
         }
@@ -54,15 +54,15 @@ namespace Api_DIO.Controllers
         public ActionResult Delete(long id)
         {
 
-            _infectadosCollection.DeleteOne(Builders<Infectado>.Filter.Where(_ => _.id == id));
+            _infectadosCollection.DeleteOne(Builders<Infectado>.Filter.Where(_ => _.Id == id));
             
-            return Ok("Atualizado com sucesso");
+            return Ok("Apagado com sucesso");
         }
 
         [HttpGet("{id}")]
         public ActionResult ObterInfectadosPorId(long id)
         {
-            var infectados = _infectadosCollection.Find(Builders<Infectado>.Filter.Where(_ => _.id == id)).ToList();
+            var infectados = _infectadosCollection.Find(Builders<Infectado>.Filter.Where(_ => _.Id == id)).ToList();
             
             return Ok(infectados);
         }
