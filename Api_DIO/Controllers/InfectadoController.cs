@@ -58,5 +58,13 @@ namespace Api_DIO.Controllers
             
             return Ok("Atualizado com sucesso");
         }
+
+        [HttpGet("{id}")]
+        public ActionResult ObterInfectadosPorId(long id)
+        {
+            var infectados = _infectadosCollection.Find(Builders<Infectado>.Filter.Where(_ => _.id == id)).ToList();
+            
+            return Ok(infectados);
+        }
     }
 }
