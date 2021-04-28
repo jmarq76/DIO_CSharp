@@ -22,7 +22,11 @@ namespace Api_DIO.Controllers
         [HttpPost]
         public ActionResult SalvarInfectado([FromBody] InfectadoDto dto)
         {
-            var infectado = new Infectado(dto.DataNascimento, dto.Sexo, dto.Latitude, dto.Longitude);
+
+            var idInfectado = _infectadosCollection.CountDocuments(Builders<Infectado>.Filter.Empty) + 1;
+
+
+            var infectado = new Infectado(idInfectado, dto.DataNascimento, dto.Sexo, dto.Latitude, dto.Longitude);
 
             _infectadosCollection.InsertOne(infectado);
             
@@ -46,11 +50,11 @@ namespace Api_DIO.Controllers
             return Ok("Atualizado com sucesso");
         }
 
-        [HttpDelete("{dataNasc}")]
-        public ActionResult Delete(DateTime dataNasc)
+        [HttpDelete("{id}")]
+        public ActionResult Delete(long id)
         {
 
-            _infectadosCollection.DeleteOne(Builders<Infectado>.Filter.Where(_ => _.DataNascimento == dataNasc));
+            _infectadosCollection.DeleteOne(Builders<Infectado>.Filter.Where(_ => _.id == id));
             
             return Ok("Atualizado com sucesso");
         }
